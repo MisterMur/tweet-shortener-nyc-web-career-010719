@@ -29,14 +29,13 @@ def word_substituter(tweet)
   tweetarr = tweet.split(' ')
   newtweet = []
   tweetarr.each do |word|
-    dictionary.each do |k,v|
-      if word == k
-        newtweet << v.to_s
+    if dictionary.key?(word) 
+        newtweet << dictionary[word].to_s
         
       else 
         newtweet << word
       end
-    end
+    
   end
   tweetstr = newtweet.join(' ')
   
