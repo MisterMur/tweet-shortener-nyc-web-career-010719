@@ -50,3 +50,4 @@ def bulk_tweet_shortener(tweetarr)
 end
 
 def selective_tweet_shortener
+end
