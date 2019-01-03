@@ -30,7 +30,7 @@ def word_substituter(tweet)
   tweetarr.each do |word|
     dictionary.each do |k,v|
       if word == k
-        word = dictionary.value(k)
+        word = dictionary.key(s)
       end
     end
   end
