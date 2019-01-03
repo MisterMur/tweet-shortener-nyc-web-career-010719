@@ -30,7 +30,7 @@ def word_substituter(tweet)
   tweetarr = tweet.split(' ')
   newtweet = []
   tweetarr.each do |word|
-    if dictionary.key?(word.capitalize) 
+    if dictionary.key?(word) 
         newtweet << dictionary[word].to_s
         
       else 
