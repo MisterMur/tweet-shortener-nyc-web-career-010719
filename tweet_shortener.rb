@@ -27,7 +27,7 @@ end
       
 def word_substituter(tweet)
   tweetarr = tweet.split(' ')
-  tweetarr.map do |word|
+  tweetarr.collect do |word|
     dictionary.map do |k,v|
       if word == k
         # puts "in if"
