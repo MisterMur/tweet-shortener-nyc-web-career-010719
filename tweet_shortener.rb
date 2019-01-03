@@ -15,12 +15,22 @@ def dictionary
   }
 end
 
+ holiday_hash.each do |seasons,holidays|
+    holidays.each do |h,s|
+     
+      s.each do |el|
+        
+        if el == "BBQ"
+          arr<< holidays.key(s)
+        end
+      end
+      
 def word_substituter(tweet)
   tweetarr = tweet.split(' ')
   tweetarr.each do |word|
-    dictionary.each do |key,value|
-      if word == key
-        word = value
+    dictionary.each do |k,v|
+      if word == k
+        word = dictionary.value(k)
       end
     end
   end
