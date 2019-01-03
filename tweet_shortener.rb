@@ -27,12 +27,14 @@ end
       
 def word_substituter(tweet)
   tweetarr = tweet.split(' ')
-  tweetarr.collect do |word|
-    dictionary.map do |k,v|
+  newtweet = []
+  tweetarr.each do |word|
+    dictionary.each do |k,v|
       if word == k
-        # puts "in if"
-        word = v.to_s
-        puts word
+        newtweet << v.to_s
+        
+      else 
+        newtweet << word
       end
     end
   end
