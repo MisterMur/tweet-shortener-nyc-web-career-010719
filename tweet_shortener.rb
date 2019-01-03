@@ -38,7 +38,7 @@ def word_substituter(tweet)
       end
     end
   end
-  tweetstr = tweetarr.join(' ')
+  tweetstr = newtweet.join(' ')
   
   return tweetstr
 end
