@@ -31,7 +31,7 @@ def word_substituter(tweet)
     dictionary.each do |k,v|
       if word == k
         puts "in if"
-        word = dictionary[k]
+        word = v.to_s
       end
     end
   end
