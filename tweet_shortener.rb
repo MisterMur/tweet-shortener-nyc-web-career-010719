@@ -62,4 +62,4 @@ def shortened_tweet_truncator(tweet)
     return newtweet[0..140]+'...'
   end
   return newtweet
-  
+end
