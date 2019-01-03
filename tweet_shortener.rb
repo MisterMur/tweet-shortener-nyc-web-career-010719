@@ -30,8 +30,9 @@ def word_substituter(tweet)
   tweetarr.map do |word|
     dictionary.each do |k,v|
       if word == k
-        puts "in if"
+        # puts "in if"
         word = v.to_s
+        puts word
       end
     end
   end
